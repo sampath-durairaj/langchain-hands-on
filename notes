@@ -1,0 +1,28 @@
+PromptTemplate
+No context from the previous questions
+
+ChatPromptTemplate
+It's kind of assistant and link with previous chats
+
+textcompletion mode - not keeping memory
+chat model  keeping memory
+
+ChatPromptTemplate --> from_template or from_messages
+
+ChatOpenAI - Chat model
+OpenAI - Text completion model
+
+
+All runnable in chain
+Normal python function is callable
+RunnableLambda is for convert callable to runnable to use it in chain
+
+
+
+
+
+Output Parsers:
+    LLM text into structred/expected data
+
+Chain methods:
+
