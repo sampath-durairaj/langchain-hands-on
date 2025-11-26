@@ -1,28 +1,35 @@
-PromptTemplate
-No context from the previous questions
+Three ways to build a chatbot
 
-ChatPromptTemplate
-It's kind of assistant and link with previous chats
+Pure LCEL (Langchain Expression Language)
+RunnableWithMessageHistory
+Langraph
 
-textcompletion mode - not keeping memory
-chat model  keeping memory
+Memory:
 
-ChatPromptTemplate --> from_template or from_messages
+It hold previous conversation and return response if it's similar context
 
-ChatOpenAI - Chat model
-OpenAI - Text completion model
-
-
-All runnable in chain
-Normal python function is callable
-RunnableLambda is for convert callable to runnable to use it in chain
+Drawbacks:
+    No session maintenance. 
 
 
+Memory optimization techniques
+1. Sliding window - last n messages
+2. Summarized memory
+3. Limit based on tokens
+
+
+Sequential Chain and Conditional routing
+
+Simple chain
+Sequencial chain -> combined. output of one chain is input for another chain
+Whn we can use  :if big problem can split into multiple chain and merge the result
+this contain all intermediate output
+
+Conditional routing
+same as If else
+need to put in chain
+chain run based on the conditional
 
 
 
-Output Parsers:
-    LLM text into structred/expected data
-
-Chain methods:
 
